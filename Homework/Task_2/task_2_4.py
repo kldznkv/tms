@@ -1,2 +1,2 @@
 a = 'My name is Lesha, i am 21 years old'
-print(a[-2])
+print(a[0:-2])
