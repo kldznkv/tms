@@ -12,4 +12,4 @@ def print_good_students(students, needscore):
     for student in students:
         if student['score'] >= float(needscore):
             print(f'Good student is: {student[name]}')
-print(print_good_students)
+print(print_good_students, 4)
