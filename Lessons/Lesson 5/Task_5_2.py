@@ -1,16 +1,21 @@
-from random import randint as get_rand
+from random import randint
 
-def create_matrix(length):
+
+def create_matrix(n, m):
     rows = []
-    for _ in range(length):
+    for i in range(n):
         tmp = []
-        for _ in range(length):
-            tmp.append(get_rand(0, 10))
+        for j in range(m):
+            tmp.append(randint(0, 10))
         rows.append(tmp)
-
-
-
     return rows
 
 
-print(create_matrix(3))
+def main():
+    x = create_matrix()
+    print(x)
+
+
+
+if __name__ == '__main__':
+    main()

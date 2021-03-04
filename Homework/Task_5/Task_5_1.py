@@ -1,7 +1,29 @@
-def my_func(a, b):
-    a = input(int())
-    b = input(int())
-    z = 0
-    print(f'{a} + {b} = {z}')
-    return summ
-print(my_func)
+# Написать программу, в которой вводятся два операнда Х и Y и знак операции
+# sign (+, –, /, *). Вычислить результат Z в зависимости от знака. Предусмотреть
+# реакции на возможный неверный знак операции, а также на ввод Y=0 при
+# делении. Организовать возможность многократных вычислений без перезагрузки
+# программа (т.е. построить бесконечный цикл). В качестве символа прекращения
+# вычислений принять ‘0’ (т.е. sign='0').
+
+def create_calc(x, y, znak, sum):
+    x = float(input("Enter X: "))
+    y = float(input("Enter Y: "))
+    znak = str(input("Enter (+, -, /, *): "))
+    sum = 0
+    if znak == '+':
+        sum = x + y
+    elif znak == '-':
+        sum = x - y
+    elif znak == '/' and y != 0:
+        sum = x / y
+    elif znak == '*':
+        sum = x * y
+    else:
+        print('Error')
+    return sum
+
+def main():
+pass
+
+if __name__ == '__main__':
+main()

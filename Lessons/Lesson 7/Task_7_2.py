@@ -14,8 +14,9 @@ print(create_matrix(2, 2))
 def print_matrix(matrix):
     for vert in matrix:
         for item in vert:
-            print(f"Element is {item}")
+            print(f"Element is \"{item}")
 
+matrix = create_matrix(2, 2)
 print(print_matrix(matrix))
 
 def sum_matrix(matrix):
